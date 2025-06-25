@@ -148,4 +148,12 @@ var (
 		Help:      "Count of out of memory events observed for the container",
 		LabelKeys: baseLabelKeys,
 	}
+
+// Process threads metrics.
+var (
+	containerProcessThreadsTotal = &types.MetricDescriptor{
+		Name:      "container_process_threads_total",
+		Help:      "Count number of threads running inside the container",
+		LabelKeys: baseLabelKeys,
+	}
 )
